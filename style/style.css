@@ -4,23 +4,91 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: hsl(30, 18%, 87%);
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: hidden;
+  font-family: "Outfit", sans-serif;
 }
 
+h1 {
+  font-family: "Young Serif", serif;
+}
 .container {
   width: 580px;
   height: fit-content;
-  border: 1px solid black;
-  margin: 40px;
-  padding: 40px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
 }
 
-p {
+#img-div-top {
+  width: 580px;
+  height: 300px;
+}
+
+#mainTitle {
+  color: #343331;
+}
+
+.ingredient {
+  background-color: hsla(332, 51%, 32%, 0.13);
+  padding: 5px 20px 10px 20px;
+  border-radius: 15px;
+}
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+img {
+  width: 580px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+p,
+li {
   font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+p,
+h1,
+li,
+h2,
+hr {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+li {
+  margin-left: 20px;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+.numbered li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.bolded-cal {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+.cal-div p {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 40px;
+}
+
+hr {
+  opacity: 0.3;
 }
